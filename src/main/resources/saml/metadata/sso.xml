@@ -1,0 +1,594 @@
+<EntityDescriptor
+	ID="_8a1c3f84-cdf5-4df3-9d2d-96e67415b677"
+	entityID="http://adfs.GLB-V-ECMSDC01.ECMSPRIV.local/adfs/services/trust"
+	xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod
+				Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+			<SignatureMethod
+				Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+			<Reference URI="#_8a1c3f84-cdf5-4df3-9d2d-96e67415b677">
+				<Transforms>
+					<Transform
+						Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+					<Transform
+						Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+				</Transforms>
+				<DigestMethod
+					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+				<DigestValue>uf5+fC+tc5xDcdRbSe0DpvZfLcO/ENIyPRlEYh+hccs=
+				</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>L1qgqPDccHZp9Yz9QcmZPKMFZoxFMTdBvTaCSeFkNb3N5JVNWhV2iurJQw2VIRxGbtxl3uGU6IQzd2jcIpnDWV2+aCWb4rTvRbd1/NNeTezlD7CLbNxhC2RjeDX2g37RlDtfIkDThjGzYDP4N/ST8Bj6STqUh71l/hhnD59BzxPdEwHWuzkS4u3AQJTcV4pwDD7eTVrn8Ocd5MFaxXZesZUTFXEufroIpJe1VSJGeC5OcR5S4laXm5iWmoL9XbHXxMeH2nZ9MPWBb2cc6WrJfzOLzbqRdJ0JYO2H/2z+5+nNiMjZgTePZuPiRb7tG/zrEgcuH1DlJ0Muzy2vuYGw+A==
+		</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>MIIDADCCAeigAwIBAgIQLbBA3JIIKrlFVPYLEsC7yTANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDEzFBREZTIFNpZ25pbmcgLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDgwN1oXDTIyMDQwNjA4NDgwN1owPDE6MDgGA1UEAxMxQURGUyBTaWduaW5nIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJvbVy2xmI2qGOMExMw637/x9Z1OLAtax50Lw78OjiBNPQ77EkuGLAtjfVz0DvI+1Zc6bRz8pBDyV7ZOi09Hzc7RLm1q4jy+bKh84u9vklf2/EWsQrQwBvHTm8DatZwvnQTq9MWs6xB5fpY/cFEXavUTV0mb3o+eNE4lOTXiZ+PsoRe01FHWJASuK6A1Jevqg9KjGtsgKNDiXuVKJg9Xll73BtLpAzS+Ap/Uv9IDH4Z3o7tRsUwBUMYIPUUfbFN5/3VVsN13AhXSdXHV/des+C+s+tsrAGos2QNuKZtSAYQhF9TS137BQPGfhDq3jUc14KQYgXh0z9QqBQAtp/fl5s0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAXhHUeZKJr8h22ynqFQz/r5lL4Fl7z7oy/LWIcztV2Z6IxmoEcO7b4dDn7m2SVMzbvZyCR97YmHY0I6Drkw+EmHn4GXruXIPMIm5ay6t2wIGPV18yp+o4xvyoJhPIbg+Cy6+Bphcmq25jywsQMcOe9SGfdA94Gt2DDaIhosKaWVn9y+D2+t+ZBSSpSuF78fZXhd0TxWH4qDe5xCBhW08XYlz04M3aU5rdtKIRpAI6Q4X4w2XTsyBjpX5lxvOaPYj3TTeQnTv6F9TJVdcsWDnajMlEM7hnuxp2AXm8aBPcRw6T69Q/NGJcZBh1zMs4mu8Li/EcmD0PL1xErnCB6fEFng==
+				</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+	<RoleDescriptor xsi:type="fed:ApplicationServiceType"
+		protocolSupportEnumeration="http://docs.oasis-open.org/ws-sx/ws-trust/200512 http://schemas.xmlsoap.org/ws/2005/02/trust http://docs.oasis-open.org/wsfed/federation/200706"
+		ServiceDisplayName="adfs.GLB-V-ECMSDC01.ECMSPRIV.local"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+		<KeyDescriptor use="encryption">
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<X509Data>
+					<X509Certificate>MIIDBjCCAe6gAwIBAgIQSB1Cc4IcuLRHu5qrlEnzcDANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDEzRBREZTIEVuY3J5cHRpb24gLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDc1NVoXDTIyMDQwNjA4NDc1NVowPzE9MDsGA1UEAxM0QURGUyBFbmNyeXB0aW9uIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKkNxLBct0Fmw+RiZSDeRladomvN8rQgGjHiM61Ee28R+AI043s0NxbfY8Lo/3+JpRmscOgp7OLrVA1N5GszYds6y0PMdO+aqfw5Mk8PsEFBxk+a899jdcS+7CsNX+NVGlNr3skleNgws1KjGDmYCT50wbJOAiUSvtcqcfmt0nOYIwpc2HJ0038D2wbt4AGxmitwp0wru98H4myCnQFkSfmDiYjkRe5xAs35G+mc/15lfd+yaEPzcFmr8+GVWOqHgbvCEz7k9Um/4ZflhXR1xeGhRDaydBnLUYqHEF/4tQ+p+Hn+et815oM0IXuVlYaTuhbz77lfIB61lARduh2gd2UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAMcegzmxFJtfP4TeJ3XHjcDJ1fs0+Bv9dUl4YkLEsWTZITYlBNiVKQiIBv3dp7k0k3O1RTvEhpPYVjzZpm2TtzjQZn859UEJdojigxbbV199xzQ+dV7n1jU53Ee7eb6v6RDsSkNSba7uw1f0FrKWwXAwaG/vKTiAqUFC+gNfbwGEZLOxK1fQgFYUNDoKW0no64G/u/rU5ZsldcMhCTAqa2wIyJsuFXAU6xyeDCoanXtroa8d8kvrFO5Vo8pGb3+v/1BUxdAVq4LlGXn62yyrPVRE/3w8HUc+5GVsWu3Gw0tJwDGhsq8BpO+97F0Qoem28Q7xCCpF1Ps60OXMhjy6sVg==
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</KeyDescriptor>
+		<fed:ClaimTypesRequested>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>E-Mail Address</auth:DisplayName>
+				<auth:Description>The e-mail address of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Given Name</auth:DisplayName>
+				<auth:Description>The given name of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Name</auth:DisplayName>
+				<auth:Description>The unique name of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>UPN</auth:DisplayName>
+				<auth:Description>The user principal name (UPN) of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/CommonName"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Common Name</auth:DisplayName>
+				<auth:Description>The common name of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/EmailAddress"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>AD FS 1.x E-Mail Address</auth:DisplayName>
+				<auth:Description>The e-mail address of the user when interoperating
+					with AD FS 1.1 or ADFS 1.0</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/Group"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Group</auth:DisplayName>
+				<auth:Description>A group that the user is a member of
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/UPN"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>AD FS 1.x UPN</auth:DisplayName>
+				<auth:Description>The UPN of the user when interoperating with AD FS
+					1.1 or ADFS 1.0</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Role</auth:DisplayName>
+				<auth:Description>A role that the user has</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Surname</auth:DisplayName>
+				<auth:Description>The surname of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>PPID</auth:DisplayName>
+				<auth:Description>The private identifier of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Name ID</auth:DisplayName>
+				<auth:Description>The SAML name identifier of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Authentication time stamp</auth:DisplayName>
+				<auth:Description>Used to display the time and date that the user
+					was authenticated</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Authentication method</auth:DisplayName>
+				<auth:Description>The method used to authenticate the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Deny only group SID</auth:DisplayName>
+				<auth:Description>The deny-only group SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Deny only primary SID</auth:DisplayName>
+				<auth:Description>The deny-only primary SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Deny only primary group SID</auth:DisplayName>
+				<auth:Description>The deny-only primary group SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Group SID</auth:DisplayName>
+				<auth:Description>The group SID of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Primary group SID</auth:DisplayName>
+				<auth:Description>The primary group SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Primary SID</auth:DisplayName>
+				<auth:Description>The primary SID of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Windows account name</auth:DisplayName>
+				<auth:Description>The domain account name of the user in the form of
+					&lt;domain&gt;\&lt;user&gt;</auth:Description>
+			</auth:ClaimType>
+		</fed:ClaimTypesRequested>
+		<fed:TargetScopes>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/2005/issuedtokenmixedasymmetricbasic256
+				</wsa:Address>
+			</wsa:EndpointReference>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/2005/issuedtokenmixedsymmetricbasic256
+				</wsa:Address>
+			</wsa:EndpointReference>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/13/issuedtokenmixedasymmetricbasic256
+				</wsa:Address>
+			</wsa:EndpointReference>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/13/issuedtokenmixedsymmetricbasic256
+				</wsa:Address>
+			</wsa:EndpointReference>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/
+				</wsa:Address>
+			</wsa:EndpointReference>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>http://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust
+				</wsa:Address>
+			</wsa:EndpointReference>
+		</fed:TargetScopes>
+		<fed:ApplicationServiceEndpoint>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/2005/issuedtokenmixedasymmetricbasic256
+				</wsa:Address>
+			</wsa:EndpointReference>
+		</fed:ApplicationServiceEndpoint>
+		<fed:PassiveRequestorEndpoint>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/
+				</wsa:Address>
+			</wsa:EndpointReference>
+		</fed:PassiveRequestorEndpoint>
+	</RoleDescriptor>
+	<RoleDescriptor xsi:type="fed:SecurityTokenServiceType"
+		protocolSupportEnumeration="http://docs.oasis-open.org/ws-sx/ws-trust/200512 http://schemas.xmlsoap.org/ws/2005/02/trust http://docs.oasis-open.org/wsfed/federation/200706"
+		ServiceDisplayName="adfs.GLB-V-ECMSDC01.ECMSPRIV.local"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+		<KeyDescriptor use="signing">
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<X509Data>
+					<X509Certificate>MIIDADCCAeigAwIBAgIQLbBA3JIIKrlFVPYLEsC7yTANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDEzFBREZTIFNpZ25pbmcgLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDgwN1oXDTIyMDQwNjA4NDgwN1owPDE6MDgGA1UEAxMxQURGUyBTaWduaW5nIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJvbVy2xmI2qGOMExMw637/x9Z1OLAtax50Lw78OjiBNPQ77EkuGLAtjfVz0DvI+1Zc6bRz8pBDyV7ZOi09Hzc7RLm1q4jy+bKh84u9vklf2/EWsQrQwBvHTm8DatZwvnQTq9MWs6xB5fpY/cFEXavUTV0mb3o+eNE4lOTXiZ+PsoRe01FHWJASuK6A1Jevqg9KjGtsgKNDiXuVKJg9Xll73BtLpAzS+Ap/Uv9IDH4Z3o7tRsUwBUMYIPUUfbFN5/3VVsN13AhXSdXHV/des+C+s+tsrAGos2QNuKZtSAYQhF9TS137BQPGfhDq3jUc14KQYgXh0z9QqBQAtp/fl5s0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAXhHUeZKJr8h22ynqFQz/r5lL4Fl7z7oy/LWIcztV2Z6IxmoEcO7b4dDn7m2SVMzbvZyCR97YmHY0I6Drkw+EmHn4GXruXIPMIm5ay6t2wIGPV18yp+o4xvyoJhPIbg+Cy6+Bphcmq25jywsQMcOe9SGfdA94Gt2DDaIhosKaWVn9y+D2+t+ZBSSpSuF78fZXhd0TxWH4qDe5xCBhW08XYlz04M3aU5rdtKIRpAI6Q4X4w2XTsyBjpX5lxvOaPYj3TTeQnTv6F9TJVdcsWDnajMlEM7hnuxp2AXm8aBPcRw6T69Q/NGJcZBh1zMs4mu8Li/EcmD0PL1xErnCB6fEFng==
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</KeyDescriptor>
+		<fed:TokenTypesOffered>
+			<fed:TokenType
+				Uri="urn:oasis:names:tc:SAML:2.0:assertion" />
+			<fed:TokenType
+				Uri="urn:oasis:names:tc:SAML:1.0:assertion" />
+		</fed:TokenTypesOffered>
+		<fed:ClaimTypesOffered>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>E-Mail Address</auth:DisplayName>
+				<auth:Description>The e-mail address of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Given Name</auth:DisplayName>
+				<auth:Description>The given name of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Name</auth:DisplayName>
+				<auth:Description>The unique name of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>UPN</auth:DisplayName>
+				<auth:Description>The user principal name (UPN) of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/CommonName"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Common Name</auth:DisplayName>
+				<auth:Description>The common name of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/EmailAddress"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>AD FS 1.x E-Mail Address</auth:DisplayName>
+				<auth:Description>The e-mail address of the user when interoperating
+					with AD FS 1.1 or ADFS 1.0</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/Group"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Group</auth:DisplayName>
+				<auth:Description>A group that the user is a member of
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/claims/UPN"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>AD FS 1.x UPN</auth:DisplayName>
+				<auth:Description>The UPN of the user when interoperating with AD FS
+					1.1 or ADFS 1.0</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Role</auth:DisplayName>
+				<auth:Description>A role that the user has</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Surname</auth:DisplayName>
+				<auth:Description>The surname of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>PPID</auth:DisplayName>
+				<auth:Description>The private identifier of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Name ID</auth:DisplayName>
+				<auth:Description>The SAML name identifier of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Authentication time stamp</auth:DisplayName>
+				<auth:Description>Used to display the time and date that the user
+					was authenticated</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Authentication method</auth:DisplayName>
+				<auth:Description>The method used to authenticate the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Deny only group SID</auth:DisplayName>
+				<auth:Description>The deny-only group SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Deny only primary SID</auth:DisplayName>
+				<auth:Description>The deny-only primary SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Deny only primary group SID</auth:DisplayName>
+				<auth:Description>The deny-only primary group SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Group SID</auth:DisplayName>
+				<auth:Description>The group SID of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Primary group SID</auth:DisplayName>
+				<auth:Description>The primary group SID of the user
+				</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Primary SID</auth:DisplayName>
+				<auth:Description>The primary SID of the user</auth:Description>
+			</auth:ClaimType>
+			<auth:ClaimType
+				Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"
+				xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+				<auth:DisplayName>Windows account name</auth:DisplayName>
+				<auth:Description>The domain account name of the user in the form of
+					&lt;domain&gt;\&lt;user&gt;</auth:Description>
+			</auth:ClaimType>
+		</fed:ClaimTypesOffered>
+		<fed:SecurityTokenServiceEndpoint>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/2005/certificatemixed
+				</wsa:Address>
+				<Metadata xmlns="http://www.w3.org/2005/08/addressing">
+					<Metadata
+						xmlns="http://schemas.xmlsoap.org/ws/2004/09/mex"
+						xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+						xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+						<wsx:MetadataSection
+							Dialect="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns="">
+							<wsx:MetadataReference>
+								<Address xmlns="http://www.w3.org/2005/08/addressing">https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/services/trust/mex
+								</Address>
+							</wsx:MetadataReference>
+						</wsx:MetadataSection>
+					</Metadata>
+				</Metadata>
+			</wsa:EndpointReference>
+		</fed:SecurityTokenServiceEndpoint>
+		<fed:PassiveRequestorEndpoint>
+			<wsa:EndpointReference
+				xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<wsa:Address>https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/
+				</wsa:Address>
+			</wsa:EndpointReference>
+		</fed:PassiveRequestorEndpoint>
+	</RoleDescriptor>
+	<SPSSODescriptor WantAssertionsSigned="true"
+		protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<KeyDescriptor use="encryption">
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<X509Data>
+					<X509Certificate>MIIDBjCCAe6gAwIBAgIQSB1Cc4IcuLRHu5qrlEnzcDANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDEzRBREZTIEVuY3J5cHRpb24gLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDc1NVoXDTIyMDQwNjA4NDc1NVowPzE9MDsGA1UEAxM0QURGUyBFbmNyeXB0aW9uIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKkNxLBct0Fmw+RiZSDeRladomvN8rQgGjHiM61Ee28R+AI043s0NxbfY8Lo/3+JpRmscOgp7OLrVA1N5GszYds6y0PMdO+aqfw5Mk8PsEFBxk+a899jdcS+7CsNX+NVGlNr3skleNgws1KjGDmYCT50wbJOAiUSvtcqcfmt0nOYIwpc2HJ0038D2wbt4AGxmitwp0wru98H4myCnQFkSfmDiYjkRe5xAs35G+mc/15lfd+yaEPzcFmr8+GVWOqHgbvCEz7k9Um/4ZflhXR1xeGhRDaydBnLUYqHEF/4tQ+p+Hn+et815oM0IXuVlYaTuhbz77lfIB61lARduh2gd2UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAMcegzmxFJtfP4TeJ3XHjcDJ1fs0+Bv9dUl4YkLEsWTZITYlBNiVKQiIBv3dp7k0k3O1RTvEhpPYVjzZpm2TtzjQZn859UEJdojigxbbV199xzQ+dV7n1jU53Ee7eb6v6RDsSkNSba7uw1f0FrKWwXAwaG/vKTiAqUFC+gNfbwGEZLOxK1fQgFYUNDoKW0no64G/u/rU5ZsldcMhCTAqa2wIyJsuFXAU6xyeDCoanXtroa8d8kvrFO5Vo8pGb3+v/1BUxdAVq4LlGXn62yyrPVRE/3w8HUc+5GVsWu3Gw0tJwDGhsq8BpO+97F0Qoem28Q7xCCpF1Ps60OXMhjy6sVg==
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</KeyDescriptor>
+		<KeyDescriptor use="signing">
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<X509Data>
+					<X509Certificate>MIIDADCCAeigAwIBAgIQLbBA3JIIKrlFVPYLEsC7yTANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDEzFBREZTIFNpZ25pbmcgLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDgwN1oXDTIyMDQwNjA4NDgwN1owPDE6MDgGA1UEAxMxQURGUyBTaWduaW5nIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJvbVy2xmI2qGOMExMw637/x9Z1OLAtax50Lw78OjiBNPQ77EkuGLAtjfVz0DvI+1Zc6bRz8pBDyV7ZOi09Hzc7RLm1q4jy+bKh84u9vklf2/EWsQrQwBvHTm8DatZwvnQTq9MWs6xB5fpY/cFEXavUTV0mb3o+eNE4lOTXiZ+PsoRe01FHWJASuK6A1Jevqg9KjGtsgKNDiXuVKJg9Xll73BtLpAzS+Ap/Uv9IDH4Z3o7tRsUwBUMYIPUUfbFN5/3VVsN13AhXSdXHV/des+C+s+tsrAGos2QNuKZtSAYQhF9TS137BQPGfhDq3jUc14KQYgXh0z9QqBQAtp/fl5s0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAXhHUeZKJr8h22ynqFQz/r5lL4Fl7z7oy/LWIcztV2Z6IxmoEcO7b4dDn7m2SVMzbvZyCR97YmHY0I6Drkw+EmHn4GXruXIPMIm5ay6t2wIGPV18yp+o4xvyoJhPIbg+Cy6+Bphcmq25jywsQMcOe9SGfdA94Gt2DDaIhosKaWVn9y+D2+t+ZBSSpSuF78fZXhd0TxWH4qDe5xCBhW08XYlz04M3aU5rdtKIRpAI6Q4X4w2XTsyBjpX5lxvOaPYj3TTeQnTv6F9TJVdcsWDnajMlEM7hnuxp2AXm8aBPcRw6T69Q/NGJcZBh1zMs4mu8Li/EcmD0PL1xErnCB6fEFng==
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</KeyDescriptor>
+		<SingleLogoutService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/" />
+		<SingleLogoutService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/" />
+		<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+		<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+		<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+		<AssertionConsumerService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/"
+			index="0" isDefault="true" />
+		<AssertionConsumerService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/"
+			index="1" />
+		<AssertionConsumerService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/"
+			index="2" />
+	</SPSSODescriptor>
+	<IDPSSODescriptor
+		protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<KeyDescriptor use="encryption">
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<X509Data>
+					<X509Certificate>MIIDBjCCAe6gAwIBAgIQSB1Cc4IcuLRHu5qrlEnzcDANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDEzRBREZTIEVuY3J5cHRpb24gLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDc1NVoXDTIyMDQwNjA4NDc1NVowPzE9MDsGA1UEAxM0QURGUyBFbmNyeXB0aW9uIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKkNxLBct0Fmw+RiZSDeRladomvN8rQgGjHiM61Ee28R+AI043s0NxbfY8Lo/3+JpRmscOgp7OLrVA1N5GszYds6y0PMdO+aqfw5Mk8PsEFBxk+a899jdcS+7CsNX+NVGlNr3skleNgws1KjGDmYCT50wbJOAiUSvtcqcfmt0nOYIwpc2HJ0038D2wbt4AGxmitwp0wru98H4myCnQFkSfmDiYjkRe5xAs35G+mc/15lfd+yaEPzcFmr8+GVWOqHgbvCEz7k9Um/4ZflhXR1xeGhRDaydBnLUYqHEF/4tQ+p+Hn+et815oM0IXuVlYaTuhbz77lfIB61lARduh2gd2UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAMcegzmxFJtfP4TeJ3XHjcDJ1fs0+Bv9dUl4YkLEsWTZITYlBNiVKQiIBv3dp7k0k3O1RTvEhpPYVjzZpm2TtzjQZn859UEJdojigxbbV199xzQ+dV7n1jU53Ee7eb6v6RDsSkNSba7uw1f0FrKWwXAwaG/vKTiAqUFC+gNfbwGEZLOxK1fQgFYUNDoKW0no64G/u/rU5ZsldcMhCTAqa2wIyJsuFXAU6xyeDCoanXtroa8d8kvrFO5Vo8pGb3+v/1BUxdAVq4LlGXn62yyrPVRE/3w8HUc+5GVsWu3Gw0tJwDGhsq8BpO+97F0Qoem28Q7xCCpF1Ps60OXMhjy6sVg==
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</KeyDescriptor>
+		<KeyDescriptor use="signing">
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<X509Data>
+					<X509Certificate>MIIDADCCAeigAwIBAgIQLbBA3JIIKrlFVPYLEsC7yTANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDEzFBREZTIFNpZ25pbmcgLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDgwN1oXDTIyMDQwNjA4NDgwN1owPDE6MDgGA1UEAxMxQURGUyBTaWduaW5nIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJvbVy2xmI2qGOMExMw637/x9Z1OLAtax50Lw78OjiBNPQ77EkuGLAtjfVz0DvI+1Zc6bRz8pBDyV7ZOi09Hzc7RLm1q4jy+bKh84u9vklf2/EWsQrQwBvHTm8DatZwvnQTq9MWs6xB5fpY/cFEXavUTV0mb3o+eNE4lOTXiZ+PsoRe01FHWJASuK6A1Jevqg9KjGtsgKNDiXuVKJg9Xll73BtLpAzS+Ap/Uv9IDH4Z3o7tRsUwBUMYIPUUfbFN5/3VVsN13AhXSdXHV/des+C+s+tsrAGos2QNuKZtSAYQhF9TS137BQPGfhDq3jUc14KQYgXh0z9QqBQAtp/fl5s0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAXhHUeZKJr8h22ynqFQz/r5lL4Fl7z7oy/LWIcztV2Z6IxmoEcO7b4dDn7m2SVMzbvZyCR97YmHY0I6Drkw+EmHn4GXruXIPMIm5ay6t2wIGPV18yp+o4xvyoJhPIbg+Cy6+Bphcmq25jywsQMcOe9SGfdA94Gt2DDaIhosKaWVn9y+D2+t+ZBSSpSuF78fZXhd0TxWH4qDe5xCBhW08XYlz04M3aU5rdtKIRpAI6Q4X4w2XTsyBjpX5lxvOaPYj3TTeQnTv6F9TJVdcsWDnajMlEM7hnuxp2AXm8aBPcRw6T69Q/NGJcZBh1zMs4mu8Li/EcmD0PL1xErnCB6fEFng==
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</KeyDescriptor>
+		<SingleLogoutService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/" />
+		<SingleLogoutService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/" />
+		<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+		<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+		<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+		<SingleSignOnService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/" />
+		<SingleSignOnService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+			Location="https://adfs.glb-v-ecmsdc01.ecmspriv.local/adfs/ls/" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="E-Mail Address"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Given Name"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="UPN" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/claims/CommonName"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Common Name"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/claims/EmailAddress"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="AD FS 1.x E-Mail Address"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute Name="http://schemas.xmlsoap.org/claims/Group"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Group" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute Name="http://schemas.xmlsoap.org/claims/UPN"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="AD FS 1.x UPN"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Role" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Surname" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="PPID" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Name ID" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Authentication time stamp"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Authentication method"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Deny only group SID"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Deny only primary SID"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Deny only primary group SID"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Group SID"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Primary group SID"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Primary SID"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+		<Attribute
+			Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"
+			NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+			FriendlyName="Windows account name"
+			xmlns="urn:oasis:names:tc:SAML:2.0:assertion" />
+	</IDPSSODescriptor>
+	<ContactPerson contactType="support" />
+</EntityDescriptor>
