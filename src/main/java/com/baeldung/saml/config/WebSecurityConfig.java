@@ -53,6 +53,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private SAMLLogoutProcessingFilter samlLogoutProcessingFilter;
 
+    @Value("${saml.sso.metadata-generator.entity-base-url}")
+    private String entityBaseUrl;
+    
+    @Value("${saml.sso.signed}")
+    private boolean signed;
+    
     @Bean
     public SAMLDiscovery samlDiscovery() {
         SAMLDiscovery idpDiscovery = new SAMLDiscovery();
@@ -71,9 +77,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public MetadataGenerator metadataGenerator() {
         MetadataGenerator metadataGenerator = new MetadataGenerator();
         metadataGenerator.setEntityId(samlAudience);
+        metadataGenerator.setRequestSigned(signed);
         metadataGenerator.setExtendedMetadata(extendedMetadata);
         metadataGenerator.setIncludeDiscoveryExtension(false);
         metadataGenerator.setKeyManager(keyManager);
+        metadataGenerator.setEntityBaseURL(entityBaseUrl);
         return metadataGenerator;
     }
 

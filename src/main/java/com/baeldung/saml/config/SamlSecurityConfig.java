@@ -50,6 +50,10 @@ public class SamlSecurityConfig {
 
     @Value("${saml.idp}")
     private String defaultIdp;
+    
+    @Value("${saml.response.skew}")
+    private int responseSkew;
+    
 
     @Bean(initMethod = "initialize")
     public StaticBasicParserPool parserPool() {
@@ -78,13 +82,18 @@ public class SamlSecurityConfig {
 
     @Bean
     public WebSSOProfileConsumer webSSOprofileConsumer() {
-        return new WebSSOProfileConsumerImpl();
+    	WebSSOProfileConsumerImpl  consumerImpl= new WebSSOProfileConsumerImpl();
+    	consumerImpl.setResponseSkew(responseSkew);
+    	consumerImpl.setMaxAuthenticationAge(500000);
+        return consumerImpl;
     }
 
     @Bean
     @Qualifier("hokWebSSOprofileConsumer")
     public WebSSOProfileConsumerHoKImpl hokWebSSOProfileConsumer() {
-        return new WebSSOProfileConsumerHoKImpl();
+    	WebSSOProfileConsumerHoKImpl consumerImpl = new WebSSOProfileConsumerHoKImpl();
+        consumerImpl.setResponseSkew(responseSkew);
+        return consumerImpl;
     }
 
     @Bean

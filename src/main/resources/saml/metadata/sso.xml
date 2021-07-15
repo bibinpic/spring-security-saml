@@ -2,34 +2,6 @@
 	ID="_8a1c3f84-cdf5-4df3-9d2d-96e67415b677"
 	entityID="http://adfs.GLB-V-ECMSDC01.ECMSPRIV.local/adfs/services/trust"
 	xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
-	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-		<SignedInfo>
-			<CanonicalizationMethod
-				Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-			<SignatureMethod
-				Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
-			<Reference URI="#_8a1c3f84-cdf5-4df3-9d2d-96e67415b677">
-				<Transforms>
-					<Transform
-						Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-					<Transform
-						Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-				</Transforms>
-				<DigestMethod
-					Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-				<DigestValue>uf5+fC+tc5xDcdRbSe0DpvZfLcO/ENIyPRlEYh+hccs=
-				</DigestValue>
-			</Reference>
-		</SignedInfo>
-		<SignatureValue>L1qgqPDccHZp9Yz9QcmZPKMFZoxFMTdBvTaCSeFkNb3N5JVNWhV2iurJQw2VIRxGbtxl3uGU6IQzd2jcIpnDWV2+aCWb4rTvRbd1/NNeTezlD7CLbNxhC2RjeDX2g37RlDtfIkDThjGzYDP4N/ST8Bj6STqUh71l/hhnD59BzxPdEwHWuzkS4u3AQJTcV4pwDD7eTVrn8Ocd5MFaxXZesZUTFXEufroIpJe1VSJGeC5OcR5S4laXm5iWmoL9XbHXxMeH2nZ9MPWBb2cc6WrJfzOLzbqRdJ0JYO2H/2z+5+nNiMjZgTePZuPiRb7tG/zrEgcuH1DlJ0Muzy2vuYGw+A==
-		</SignatureValue>
-		<KeyInfo>
-			<X509Data>
-				<X509Certificate>MIIDADCCAeigAwIBAgIQLbBA3JIIKrlFVPYLEsC7yTANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDEzFBREZTIFNpZ25pbmcgLSBhZGZzLkdMQi1WLUVDTVNEQzAxLkVDTVNQUklWLmxvY2FsMB4XDTIxMDQwNjA4NDgwN1oXDTIyMDQwNjA4NDgwN1owPDE6MDgGA1UEAxMxQURGUyBTaWduaW5nIC0gYWRmcy5HTEItVi1FQ01TREMwMS5FQ01TUFJJVi5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJvbVy2xmI2qGOMExMw637/x9Z1OLAtax50Lw78OjiBNPQ77EkuGLAtjfVz0DvI+1Zc6bRz8pBDyV7ZOi09Hzc7RLm1q4jy+bKh84u9vklf2/EWsQrQwBvHTm8DatZwvnQTq9MWs6xB5fpY/cFEXavUTV0mb3o+eNE4lOTXiZ+PsoRe01FHWJASuK6A1Jevqg9KjGtsgKNDiXuVKJg9Xll73BtLpAzS+Ap/Uv9IDH4Z3o7tRsUwBUMYIPUUfbFN5/3VVsN13AhXSdXHV/des+C+s+tsrAGos2QNuKZtSAYQhF9TS137BQPGfhDq3jUc14KQYgXh0z9QqBQAtp/fl5s0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAXhHUeZKJr8h22ynqFQz/r5lL4Fl7z7oy/LWIcztV2Z6IxmoEcO7b4dDn7m2SVMzbvZyCR97YmHY0I6Drkw+EmHn4GXruXIPMIm5ay6t2wIGPV18yp+o4xvyoJhPIbg+Cy6+Bphcmq25jywsQMcOe9SGfdA94Gt2DDaIhosKaWVn9y+D2+t+ZBSSpSuF78fZXhd0TxWH4qDe5xCBhW08XYlz04M3aU5rdtKIRpAI6Q4X4w2XTsyBjpX5lxvOaPYj3TTeQnTv6F9TJVdcsWDnajMlEM7hnuxp2AXm8aBPcRw6T69Q/NGJcZBh1zMs4mu8Li/EcmD0PL1xErnCB6fEFng==
-				</X509Certificate>
-			</X509Data>
-		</KeyInfo>
-	</Signature>
 	<RoleDescriptor xsi:type="fed:ApplicationServiceType"
 		protocolSupportEnumeration="http://docs.oasis-open.org/ws-sx/ws-trust/200512 http://schemas.xmlsoap.org/ws/2005/02/trust http://docs.oasis-open.org/wsfed/federation/200706"
 		ServiceDisplayName="adfs.GLB-V-ECMSDC01.ECMSPRIV.local"
